@@ -7,7 +7,7 @@ def next_alpha(ap=''):
         for i in range(0,l):
             if ap[i] != 'Z':
                 itx = alphas.index(ap[i])
-                ap = ap[:i] + alphas[itx]
+                ap = ap[:i] + alphas[itx+1]
                 return ap
         return ap + 'A'
     else:
